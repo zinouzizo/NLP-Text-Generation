@@ -46,6 +46,7 @@ jobs:
     with:
       script: |-
         cp -R /inputs/repo /nlp
+        nvidia-sni
         cd /nlp
         pip3 install -U transformers
         python3 nlp_text_generation.py
